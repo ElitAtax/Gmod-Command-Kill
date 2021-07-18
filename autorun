@@ -1,0 +1,12 @@
+hook.Add("PlayerSay", "KillPlayer" , function(sender, text)
+
+    if text == "/kill" then
+        print("Vous vous êtes auto-tuer")
+
+            sender:Kill()
+    end
+end)
+
+--[[
+    Put in on : 
+      garrysmod > addons > "Create FILE" > "CREATE A FILE NAMED : AUTORUN" > "CREATE FILE NAMED SERVER" > and put the folder in the autorun file
